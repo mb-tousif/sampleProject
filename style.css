@@ -1,0 +1,154 @@
+:root {
+  --buttonColor: #FF008E;
+  --titleColor: #5A20CB;
+  --formColor: #02B290;
+  --primaryColor:#5DA3FA;
+  --text-color: #CAD5E2;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+header{
+  background-color: var(--primaryColor);
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding-left: 20px;
+  min-height: 120px;
+  overflow: hidden;
+}
+.logo{
+  height: 80px;
+  width: 120px;
+  margin-left: 10%;
+  padding-top: 20px;
+}
+
+.text-color{
+  color: var(--titleColor);
+}
+.menu-bar>ul>li{
+  display: inline-block;
+  margin-top: 30px;
+  padding: 20px;
+}
+.menu-bar>ul>li>a{
+  font-size: 20px;
+  color: var(--text-color);
+  padding: 10px;
+}
+.menu-bar>ul>li:hover a{
+  background-color: var(--titleColor);
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+.banner{
+  background-color: #51E1ED;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: calc(100vh-200px);
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+.text-side{
+  margin-left: 10%;
+  font-weight: 400;
+  padding: 10px;
+}
+#image{
+  width: 100%;
+  padding: 20px;
+}
+#btn{
+  padding: 15px;
+  background-color: var(--buttonColor);
+  border-radius: 20%;
+  color: var(--text-color);
+  font-size: 20px;
+  float: right;
+  margin-right: 10%;
+  margin-bottom: 10px;
+}
+.card{
+  background-color: cornsilk;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.icon{
+  font-size: 60px;
+  color: chocolate;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.feature-banner, .cnt, .gallery, .about, footer{
+  background-color: var(--primaryColor);
+}
+.image-card{
+  background-color: cornsilk;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+#manu{
+  padding: 20px;
+  color: var(--text-color);
+  text-align: center;
+  font-size: 2rem;
+}
+.cartoonName{
+  background: cornsilk;
+}
+#cartoon{
+  width: 350px;
+  height: 300px;
+  border: 5px solid darkmagenta;
+  border-radius: 20px;
+  margin-left: 20%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  box-shadow: 10px 5px 5px rgb(0,0,0);
+}
+.form-side{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+input{
+  width: 90%;
+  padding: 15px;
+  background-color: lightgrey;
+  align-items: center;
+  margin: 25px;
+  border-radius: 20px;
+}
+.log-in{
+  background: lightpink;
+  border-radius: 13%;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  box-shadow: 10px 5px 5px var(--primaryColor);
+}
+.contact{
+  background-color: teal;
+}
+footer{
+  padding: 20px;
+  height: 80px;
+  text-align: center;
+  
+}
+.animation-side{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.image-card:hover #cartoon{
+  transform: scale(1.1);
+}
